@@ -1,0 +1,5 @@
+<div *ngIf="loadingIndicator.Get('K2') | async; else activeButton">
+    c02 true
+  </div>
+  <ng-template #activeButton> c02 false </ng-template>
+  
