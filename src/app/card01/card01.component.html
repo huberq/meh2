@@ -1,4 +1,7 @@
-<div *ngIf="loadingIndicator.Get('K1') | async; else activeButton">
+<div *ngIf="loadingIndicator.Get(imageSrc) | async; else activeButton">
   c01 true
 </div>
 <ng-template #activeButton> c01 false </ng-template>
+<div>
+{{ imageSrc }}
+    </div>

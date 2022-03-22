@@ -5,3 +5,11 @@
 
 {{  loadingIndicator.loading$ | async}}
 {{  loadingIndicator.loading | async }}
+
+
+
+<div *ngFor="let t of tableX">
+    <!-- <div>{{ t }}</div> -->
+    <app-card01 [imageSrc]="'qq'+t"></app-card01>
+
+</div>
